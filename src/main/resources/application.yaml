@@ -1,0 +1,30 @@
+server:
+  port: 8072
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: product-service
+          uri: lb://product-service   # Use load-balanced URI for dynamic discovery
+          predicates:
+            - Path=/products/**
+          filters:
+            - StripPrefix=1
+
+    consul:
+      discovery:
+        enabled: true    # Enable Consul discovery
+        health-check-interval: 10s
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

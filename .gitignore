@@ -1,0 +1,57 @@
+# Build output
+target/
+build/
+
+# Maven wrapper
+.mvn/
+!mvn/wrapper/mvnw
+!mvn/wrapper/mvnw.cmd
+!mvn/wrapper/maven-wrapper.jar
+
+# Gradle wrapper
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDEs
+## Spring Tool Suite (STS)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+## IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+## NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+## Visual Studio Code
+.vscode/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+
+# Compiled class files
+*.class
+*.jar
+*.war
+
+# Other
+# Exclude all files in 'src/main/target' and 'src/test/target' directories
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
