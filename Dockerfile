@@ -8,7 +8,7 @@ LABEL "org.opencontainers.image.authors"="swiftcart.com"
 WORKDIR /app
 
 # Copy the JAR file for the API gateway from the target directory into the image
-COPY target/api-gateway-0.0.1-SNAPSHOT.jar app.jar
+COPY api-gateway-app/target/api-gateway-app-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port your API gateway runs on (8072)
 EXPOSE 8072
